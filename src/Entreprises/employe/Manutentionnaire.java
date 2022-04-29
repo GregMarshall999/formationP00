@@ -1,8 +1,9 @@
-package employe;
+package Entreprises.employe;
 
 public class Manutentionnaire extends Employe
 {
     private final int heureTr;
+    private final int MAN_MULT = 65;
 
     public Manutentionnaire(String prenom, String nom, int age, String annEE, int heureTr)
     {
@@ -10,15 +11,12 @@ public class Manutentionnaire extends Employe
         this.heureTr = heureTr;
     }
 
-    @Override
     public double calculerSalaire()
     {
-        return heureTr * 65;
+        return heureTr * MAN_MULT;
     }
 
-    @Override
-    public String getNom()
-    {
-        return "Le manut. " + prenom + " " + nom + " ";
+    public String getTitle() {
+        return "Le manut. ";
     }
 }

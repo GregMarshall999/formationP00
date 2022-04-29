@@ -1,8 +1,9 @@
-package employe;
+package Entreprises.employe;
 
 public class Technicien extends Employe
 {
     private final int nUnite;
+    private final int TECH_MULT = 5;
 
     public Technicien(String prenom, String nom, int age, String annEE, int nUnite)
     {
@@ -10,15 +11,13 @@ public class Technicien extends Employe
         this.nUnite = nUnite;
     }
 
-    @Override
+
     public double calculerSalaire()
     {
-        return nUnite * 5;
+        return nUnite * TECH_MULT;
     }
 
-    @Override
-    public String getNom()
-    {
-        return "Le technicien " + prenom + " " + nom + " ";
+    public String getTitle() {
+        return "Le technicien ";
     }
 }

@@ -1,4 +1,4 @@
-package employe;
+package Entreprises.employe;
 
 public abstract class Employe
 {
@@ -15,8 +15,12 @@ public abstract class Employe
 
     public abstract double calculerSalaire();
 
+    public String getTitle() {
+        return "L'employé ";
+    }
+
     public String getNom()
     {
-        return "L'employé "+prenom+" "+nom+" ";
+        return this.getTitle() +prenom+" "+nom+" ";
     }
 }

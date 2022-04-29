@@ -1,9 +1,9 @@
-package employe;
+package Entreprises.employe;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Personnel
+public class Personnel implements IPersonnel
 {
     private final List<Employe> p;
 

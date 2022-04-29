@@ -1,21 +1,20 @@
-package employe;
+package Entreprises.employe;
 
 public class Representant extends Commercial
 {
+    private final int REP_BONUS = 800;
+
     public Representant(String prenom, String nom, int age, String annEE, double chiffreAff)
     {
         super(prenom, nom, age, annEE, chiffreAff);
     }
 
-    @Override
     public double calculerSalaire()
     {
-        return super.calculerSalaire() + 800;
+        return super.calculerSalaire() + REP_BONUS;
     }
 
-    @Override
-    public String getNom()
-    {
-        return "Le représentant " + prenom + " " + nom + " ";
+    public String getTitle() {
+        return "Le représentant ";
     }
 }

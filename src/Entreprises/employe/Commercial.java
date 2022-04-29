@@ -1,8 +1,9 @@
-package employe;
+package Entreprises.employe;
 
 public abstract class Commercial extends Employe
 {
     private final double chiffreAff;
+    private final double POURCENTAGE_COM = .2;
 
     public Commercial(String prenom, String nom, int age, String annEE, double chiffreAff)
     {
@@ -13,6 +14,6 @@ public abstract class Commercial extends Employe
     @Override
     public double calculerSalaire()
     {
-        return (chiffreAff*20)/100;
+        return chiffreAff*POURCENTAGE_COM;
     }
 }
