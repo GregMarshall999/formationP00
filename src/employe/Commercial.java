@@ -1,10 +1,10 @@
 package employe;
 
-public abstract class Bureau extends Employe
+public abstract class Commercial extends Employe
 {
-    protected double chiffreAff;
+    private final double chiffreAff;
 
-    public Bureau(String prenom, String nom, int age, String annEE, double chiffreAff)
+    public Commercial(String prenom, String nom, int age, String annEE, double chiffreAff)
     {
         super(prenom, nom, age, annEE);
         this.chiffreAff = chiffreAff;

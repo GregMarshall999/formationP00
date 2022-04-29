@@ -1,6 +1,6 @@
 package employe;
 
-public class Vendeur extends Bureau
+public class Vendeur extends Commercial
 {
     public Vendeur(String prenom, String nom, int age, String annEE, double chiffreAff)
     {
